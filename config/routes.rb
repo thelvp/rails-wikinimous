@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
-  resources :pages
+  resources :articles
 end
 
-# rails routes: 
+# rails routes:
 # pages       GET       /pages(.:format)                       pages#index
 #             POST      /pages(.:format)                       pages#create
 # new_page    GET       /pages/new(.:format)                   pages#new
