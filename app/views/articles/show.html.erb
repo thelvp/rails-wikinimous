@@ -5,12 +5,12 @@
   <p> <%= @article.content %> </p>
 
   <div class="btn mt-3">
-    <%= link_to "📝 Edit article", edit_page_path(@article) %></li>
+    <%= link_to "📝 Edit article", edit_article_path(@article) %></li>
   </div>
 
   <div class="btn mt-3">
     <%= link_to "🗑️ Delete article",
-      page_path(@article),
+      article_path(@article),
       data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
   </div>
 </div>
